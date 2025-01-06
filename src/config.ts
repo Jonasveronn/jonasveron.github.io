@@ -27,7 +27,7 @@ export const ME = {
       description: "Personal Projects Built",
     },
     {
-      value: "100%",
+      value: "100",
       description: "Commitment to Growth",
     },
   ],
