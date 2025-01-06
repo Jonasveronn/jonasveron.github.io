@@ -42,13 +42,6 @@ export const ME = {
 
 export const SOCIALS = [
   {
-    name: "Instagram",
-    url: "https://www.instagram.com/jonasveronn/",
-    icon: "instagram-fill",
-    show: true,
-  },
-
-  {
     name: "GitHub",
     url: "https://github.com/Jonasveronn",
     icon: "github-fill",
