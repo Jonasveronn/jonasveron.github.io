@@ -1,30 +1,88 @@
 interface HardSkill {
-  name: string;
-  description: string;
-  icon: string;
+  name: string
+  description: string
+  icon: string
 }
 
 const hardSkills: HardSkill[] = [
   {
-    name: "AstroJs",
-    description: "My favorite static site generator for building modern websites",
-    icon: "astro_dark"
-  },
-  {
-    name: "NextJs",
-    description: "My favorite React framework for building modern web apps",
-    icon: "nextjs_icon_dark"
+    name: "React",
+    description:
+      "I've been using React to build dynamic and interactive front-end applications, managing state and implementing hooks.",
+    icon: "react",
   },
   {
     name: "NodeJs",
-    description: "I've been using NodeJs for backend development since 2018",
-    icon: "nodejs"
+    description:
+      "I use Node.js to build server-side applications and APIs, with a focus on scalability and performance.",
+    icon: "nodejs",
   },
   {
     name: "MongoDB",
-    description: "My favorite database for modern apps",
-    icon: "mongodb"
-  }
-];
+    description:
+      "I work with MongoDB as a NoSQL database, managing data and building scalable applications with efficient queries.",
+    icon: "mongodb",
+  },
+  {
+    name: "Express",
+    description:
+      "I use Express.js for building RESTful APIs and handling routing, middleware, and server-side logic.",
+    icon: "express",
+  },
+  {
+    name: "Git & GitHub",
+    description:
+      "I use Git for version control and GitHub for collaboration and project management in a team environment.",
+    icon: "github-fill",
+  },
+  {
+    name: "Agile Methodology",
+    description:
+      "I apply Agile practices to plan, develop, and iterate on projects in sprints, collaborating closely with teams.",
+    icon: "agile",
+  },
+  {
+    name: "HTML & CSS",
+    description:
+      "I have solid experience in HTML5 and CSS3 to build well-structured and responsive web pages.",
+    icon: "html",
+  },
+  {
+    name: "JavaScript",
+    description:
+      "I use JavaScript for both front-end and back-end development, focusing on functionality and user experience.",
+    icon: "logo",
+  },
+  {
+    name: "Figma",
+    description:
+      "I use Figma for designing web and mobile user interfaces, creating prototypes, and collaborating with teams.",
+    icon: "logo",
+  },
+  {
+    name: "Mocha",
+    description:
+      "I use Mocha for testing JavaScript code, ensuring functionality, and improving code quality in my applications.",
+    icon: "logo",
+  },
+  {
+    name: "Chai",
+    description:
+      "I use Chai as an assertion library for Mocha, simplifying testing and ensuring that my code behaves as expected.",
+    icon: "logo",
+  },
+  {
+    name: "TailwindCSS",
+    description:
+      "I use TailwindCSS for creating responsive, utility-first CSS designs, allowing for fast styling and customization.",
+    icon: "logo",
+  },
+  {
+    name: "Mongoose",
+    description:
+      "I use Mongoose to interact with MongoDB, modeling and managing data with a clean and efficient API.",
+    icon: "logo",
+  },
+]
 
-export default hardSkills;
+export default hardSkills
