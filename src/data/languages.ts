@@ -12,7 +12,8 @@ const languages: Language[] = [
   },
   {
     name: "English",
-    level: "Basic",
+    level:
+      "Basic (Actively improving my technical English skills to collaborate effectively in international teams and understand industry documentation)",
     show: true,
   },
   {

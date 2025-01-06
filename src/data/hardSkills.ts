@@ -33,7 +33,7 @@ const hardSkills: HardSkill[] = [
     name: "Git & GitHub",
     description:
       "I use Git for version control and GitHub for collaboration and project management in a team environment.",
-    icon: "github-fill",
+    icon: "github",
   },
   {
     name: "Agile Methodology",
@@ -51,37 +51,37 @@ const hardSkills: HardSkill[] = [
     name: "JavaScript",
     description:
       "I use JavaScript for both front-end and back-end development, focusing on functionality and user experience.",
-    icon: "logo",
+    icon: "javascript",
   },
   {
     name: "Figma",
     description:
       "I use Figma for designing web and mobile user interfaces, creating prototypes, and collaborating with teams.",
-    icon: "logo",
+    icon: "figma",
   },
   {
     name: "Mocha",
     description:
       "I use Mocha for testing JavaScript code, ensuring functionality, and improving code quality in my applications.",
-    icon: "logo",
+    icon: "mocha",
   },
   {
     name: "Chai",
     description:
       "I use Chai as an assertion library for Mocha, simplifying testing and ensuring that my code behaves as expected.",
-    icon: "logo",
+    icon: "chai",
   },
   {
     name: "TailwindCSS",
     description:
       "I use TailwindCSS for creating responsive, utility-first CSS designs, allowing for fast styling and customization.",
-    icon: "logo",
+    icon: "tailwindcss",
   },
   {
     name: "Mongoose",
     description:
       "I use Mongoose to interact with MongoDB, modeling and managing data with a clean and efficient API.",
-    icon: "logo",
+    icon: "mongoose",
   },
 ]
 

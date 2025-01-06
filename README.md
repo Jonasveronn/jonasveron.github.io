@@ -4,6 +4,7 @@ Is a free and open-source portfolio template built with Astro. It's a great star
 portfolio site.
 
 This project leverages **Astro v5**, incorporating the latest features that Astro has to offer.
+
 <p  style="text-align: center;">
   <img style="display: block; margin: 0 auto;" alt="Simple Portfolio Cover preview" src="https://firebasestorage.googleapis.com/v0/b/biography-fa3a3.appspot.com/o/Cover2.webp?alt=media&token=1cd30f91-5738-4d51-bd51-c52fb76152ba"/>
 </p>
@@ -15,6 +16,7 @@ This project leverages **Astro v5**, incorporating the latest features that Astr
 - [VIEW DEMO](https://simple-portfolio.vicbox.dev)
 
 ### Features
+
 **Now upgraded to Astro v5**: the latest release of Astro.
 
 - **Astro v5**: Utilizes the latest features of Astro for a fast and optimized static site.
@@ -52,29 +54,29 @@ Follow these steps to set up the project locally.
 
 1. **Clone the repository:**
 
-    ```sh
-    git clone <repository-url>
-    cd astro-simple-portfolio
-    ```
+   ```sh
+   git clone <repository-url>
+   cd astro-simple-portfolio
+   ```
 
 2. **Install dependencies:**
 
-    ```sh
-    npm install
-    ```
+   ```sh
+   npm install
+   ```
 
 3. **Start the development server:**
 
-    ```sh
-    npm run dev
-    ```
+   ```sh
+   npm run dev
+   ```
 
 This will start the Astro development server. Open a browser and visit `http://localhost:4321` to see the site.
 
 ## Project Structure
 
 | File/Folder      | Description                                                                                    |
-|------------------|------------------------------------------------------------------------------------------------|
+| ---------------- | ---------------------------------------------------------------------------------------------- |
 | `src/assets`     | Contains images and other assets used in the project.                                          |
 | `src/components` | Contains React components used in the project.                                                 |
 | `src/content`    | Contains the content for the site, such as projects, experiences, and educational information. |
@@ -86,7 +88,6 @@ This will start the Astro development server. Open a browser and visit `http://l
 | `src/config.ts`  | Contains configurations for the site.                                                          |
 | `src/lib`        | Contains utility functions used in the project.                                                |
 | `public`         | Contains static files such as images, favicons, and other assets.                              |
-
 
 ## Configuration
 
@@ -108,7 +109,7 @@ Those sections are arrays of objects that contain the following properties:
 table explaining the properties of each object:
 
 | Property    | Type   | Description                                            |
-|-------------|--------|--------------------------------------------------------|
+| ----------- | ------ | ------------------------------------------------------ |
 | website     | string | The URL of your site.                                  |
 | title       | string | The title of your site.                                |
 | description | string | A brief description of your site.                      |
@@ -126,20 +127,20 @@ table explaining the properties of each object:
 
 ```typescript
 export const SITE = {
-    website: "https://vicbox.dev/projects/simple-portfolio", // replace this with your deployed domain
-    title: "Simple Portfolio",
-    description: "A simple but beautiful portfolio created with Astro",
-    tags: ["portfolio", "Resume cv", "Astro"],
-    ogImage: "/og-image.webp",
-    logo: "logo",
-    logoText: "SPortfolio",
-    lang: "en",
-    favicon: "/favicon.png",
-    repository: "https://github.com/vito8916/simple-portfolio.git",
-    author: "Victor Alvarado",
-    profile: "https://victoralvarado.dev/",
+  website: "https://jonasveronn.github.io/",
+  title: "Professional portfolio",
+  description: "A simple but beautiful portfolio created with Astro",
+  tags: ["portfolio", "Resume cv", "Astro"],
+  ogImage: "/og-image.webp",
+  logo: "logo",
+  logoText: "Professional portfolio",
+  lang: "en",
+  favicon: "/favicon.png",
+  repository: "https://github.com/vito8916/simple-portfolio.git",
+  author: "Victor Alvarado",
+  profile: "https://victoralvarado.dev/",
 }
-````
+```
 
 ---
 
@@ -148,7 +149,7 @@ export const SITE = {
 table explaining the properties of each object:
 
 | Property     | Type   | Description                                                             |
-|--------------|--------|-------------------------------------------------------------------------|
+| ------------ | ------ | ----------------------------------------------------------------------- |
 | name         | string | Your name.                                                              |
 | profession   | string | Your profession.                                                        |
 | profileImage | string | The image used for your profile.                                        |
@@ -160,31 +161,34 @@ table explaining the properties of each object:
 
 ```typescript
 export const ME = {
-    name: "John Doe",
-    profession: "Software Engineer | Full Stack Developer",
-    profileImage: "pp.png",
-    profileFacts: [
-        {
-            value: 10,
-            description: "Years of Experience"
-        },
-        {
-            value: 5,
-            description: "Completed Projects"
-        },
-        {
-            value: 4,
-            description: "Satisfied Clients"
-        }
-    ],
-    contactInfo: {
-        email: "vicbox.dev@vicbox.dev",
-        linkedin: "https://www.linkedin.com/in/victor-alvaradohn",
-        resumeDoc: "resume.pdf",
+  name: "John Doe",
+  profession: "Software Engineer | Full Stack Developer",
+  profileImage: "pp.png",
+  profileFacts: [
+    {
+      value: 10,
+      description: "Years of Experience",
     },
-    aboutMe: "I am a software engineer with a passion for web development. I have experience in building web " + "applications using modern technologies. I am a self-taught developer who enjoys learning new things and " + "sharing knowledge with others.",
+    {
+      value: 5,
+      description: "Completed Projects",
+    },
+    {
+      value: 4,
+      description: "Satisfied Clients",
+    },
+  ],
+  contactInfo: {
+    email: "vicbox.dev@vicbox.dev",
+    linkedin: "https://www.linkedin.com/in/victor-alvaradohn",
+    resumeDoc: "resume.pdf",
+  },
+  aboutMe:
+    "I am a software engineer with a passion for web development. I have experience in building web " +
+    "applications using modern technologies. I am a self-taught developer who enjoys learning new things and " +
+    "sharing knowledge with others.",
 }
-````
+```
 
 ---
 
@@ -209,23 +213,21 @@ And also the Meta Tags in the Head of the HTML should be working correctly.
 
 ## Add your projects, experiences, and educational information
 
-
 ### Projects (as a Content Collection)
 
 For projects, we are going to use the `src/content/projects` directory. Each project is a separate `.mdx` or `.md` file in this
 directory. The file should have the following structure:
 
-| Property   | Type     | Description                                                                                   |
-|------------|----------|-----------------------------------------------------------------------------------------------|
-| title      | string   | The title of the project.                                                                     |
-| summary    | string   | A brief description of the project.                                                           |
-| tags       | string[] | An array of tags related to the project.                                                      |
-| startDate  | Date     | The start date of the project.                                                                |
-| endDate    | Date     | The end date of the project.                                                                  |
-| url        | string   | The URL of the project to show a demo or more information.                                    |
-| cover      | string   | An image to show in the project card.                                                         |
-| ogImage    | string   | An image to show when sharing the project on social media.                                    |                                    |
-
+| Property  | Type     | Description                                                |
+| --------- | -------- | ---------------------------------------------------------- | --- |
+| title     | string   | The title of the project.                                  |
+| summary   | string   | A brief description of the project.                        |
+| tags      | string[] | An array of tags related to the project.                   |
+| startDate | Date     | The start date of the project.                             |
+| endDate   | Date     | The end date of the project.                               |
+| url       | string   | The URL of the project to show a demo or more information. |
+| cover     | string   | An image to show in the project card.                      |
+| ogImage   | string   | An image to show when sharing the project on social media. |     |
 
 #### Example frontMatter:
 
@@ -234,19 +236,20 @@ directory. The file should have the following structure:
 title: ProAccountant Website
 summary: Professional Accounting Services Website built with Next.js, Tailwind CSS, TypeScript, and ShadCN. The site showcases accounting services, features a contact form, and offers a blog section to establish the accountant as an authority in the field.
 tags:
-    - React
-    - Next.js
-    - ContentFull
-    - Motion
-    - Tailwind
+  - React
+  - Next.js
+  - ContentFull
+  - Motion
+  - Tailwind
 startDate: 2024-04-07
 endDate: 2024-04-09
 author: Victor Alvarado
 url: https://google.com
-cover: './images/pro-accountant/accnt.webp'
-ogImage: './images/pro-accountant/accnt.webp'
+cover: "./images/pro-accountant/accnt.webp"
+ogImage: "./images/pro-accountant/accnt.webp"
 ---
 ```
+
 If you plan to add images to the project, you should place them in the `src/content/projects/images/` directory.
 For a better organization, I recommend creating a separate folder inside `images/` for each project.
 
@@ -262,7 +265,7 @@ held.
 table explaining the properties of each object:
 
 | Property    | Type     | Description                                                           |
-|-------------|----------|-----------------------------------------------------------------------|
+| ----------- | -------- | --------------------------------------------------------------------- |
 | title       | string   | The title of the job.                                                 |
 | startDate   | Date     | The start date of the job.                                            |
 | endDate     | Date     | The end date of the job.                                              |
@@ -272,29 +275,29 @@ table explaining the properties of each object:
 | goals       | string[] | An array of goals or achievements during the job.                     |
 | currentJob  | boolean  | A boolean value to indicate if you are currently working in this job. |
 
-
 #### Example:
 
 ```typescript
 const workExperience: WorkExperience[] = [
-    {
-        title: "Frontend Developer",
-        startDate: "2020-03-10",
-        endDate: "", // Leave empty if you are currently working here
-        company: "Google Inc",
-        location: "United States",
-        description: "Developed and maintained web applications using React, NextJs, and Tailwind CSS.",
-        goals: [
-            "Developed and maintained web applications using React, NodeJs, and MongoDB.",
-            "Worked with the team to develop and maintain web applications using React, NodeJs, and MongoDB.",
-            "Created and maintained web applications using React, NodeJs, and MongoDB.",
-        ],
-        currentJob: true,
-    },
-    // Add more jobs as needed
-];
+  {
+    title: "Frontend Developer",
+    startDate: "2020-03-10",
+    endDate: "", // Leave empty if you are currently working here
+    company: "Google Inc",
+    location: "United States",
+    description:
+      "Developed and maintained web applications using React, NextJs, and Tailwind CSS.",
+    goals: [
+      "Developed and maintained web applications using React, NodeJs, and MongoDB.",
+      "Worked with the team to develop and maintain web applications using React, NodeJs, and MongoDB.",
+      "Created and maintained web applications using React, NodeJs, and MongoDB.",
+    ],
+    currentJob: true,
+  },
+  // Add more jobs as needed
+]
 
-export default workExperience;
+export default workExperience
 ```
 
 For better results, I highly recommend using Action Verbs to describe your achievements and responsibilities. Here are
@@ -318,7 +321,7 @@ Holds the details regarding your educational background.
 table explaining the properties of each object:
 
 | Property    | Type    | Description                                                               |
-|-------------|---------|---------------------------------------------------------------------------|
+| ----------- | ------- | ------------------------------------------------------------------------- |
 | title       | string  | The title of the degree or course.                                        |
 | startDate   | Date    | The start date of the degree or course.                                   |
 | endDate     | Date    | The end date of the degree or course.                                     |
@@ -327,25 +330,25 @@ table explaining the properties of each object:
 | description | string  | A brief description of the degree or course.                              |
 | currentUni  | boolean | A boolean value to indicate if you are currently studying in this school. |
 
-
 #### Example:
 
 ```typescript
 const education = [
-    {
-        title: "General English",
-        startDate: "2024-09-01",
-        endDate: "2025-06-01", // Leave empty if you are currently studying here
-        school: "UCD ELA",
-        location: "Ireland",
-        description: "Studied English as a second language.",
-        currentUni: false, // Set to true if you are currently studying here
-    },
-    // Add more education entries as needed
-];
+  {
+    title: "General English",
+    startDate: "2024-09-01",
+    endDate: "2025-06-01", // Leave empty if you are currently studying here
+    school: "UCD ELA",
+    location: "Ireland",
+    description: "Studied English as a second language.",
+    currentUni: false, // Set to true if you are currently studying here
+  },
+  // Add more education entries as needed
+]
 
-export default education;
+export default education
 ```
+
 ---
 
 ### Hard Skills (as array of objects file)
@@ -358,15 +361,16 @@ Example structure:
 
 ```typescript
 const Hardskills = [
-    {
-        name: "AstroJs",
-        description: "My favorite static site generator for building modern websites",
-        icon: "astro_dark"
-    }
-    // Add more hard skills as needed
-];
+  {
+    name: "AstroJs",
+    description:
+      "My favorite static site generator for building modern websites",
+    icon: "astro_dark",
+  },
+  // Add more hard skills as needed
+]
 
-export default skills;
+export default skills
 ```
 
 ---
@@ -381,14 +385,14 @@ Example structure:
 
 ```typescript
 const Hardskills = [
-    {
-        name: "AstroJs",
-        icon: "astro_dark"
-    }
-    // Add more hard skills as needed
-];
+  {
+    name: "AstroJs",
+    icon: "astro_dark",
+  },
+  // Add more hard skills as needed
+]
 
-export default skills;
+export default skills
 ```
 
 You can add, edit, or remove entries from these files to customize the content presented on your portfolio. Each file
@@ -396,7 +400,7 @@ typically exports an array of objects or strings that are consumed by various co
 
 ---
 
-## Customization and  Styling
+## Customization and Styling
 
 Styles can be customized in the `tailwind.config.js` file
 and add your custom styles in the `src/styles/globals.css`.
@@ -407,26 +411,26 @@ To customize the colors, you can edit the theme section in the `tailwind.config.
 module.exports = {
   theme: {
     extend: {
-        colors: {
-            // Light mode colors
-            'light-theme': '#E9EBEC', // Background color for light mode
-            'primary-light': '#FBD144', // Primary color for light mode
-            'primary-hover-light': '#FFE071', // Primary hover color for light mode
+      colors: {
+        // Light mode colors
+        "light-theme": "#E9EBEC", // Background color for light mode
+        "primary-light": "#FBD144", // Primary color for light mode
+        "primary-hover-light": "#FFE071", // Primary hover color for light mode
 
-            // Dark mode colors
-            'dark-theme': '#0C151D', // Background color for dark mode
-            'primary-dark': '#FFE071', // Primary color for dark mode
-            'primary-hover-dark': '#FBD144', // Primary hover color for dark mode
-            'text-dark': '#d7d9da', // Text color for dark mode
+        // Dark mode colors
+        "dark-theme": "#0C151D", // Background color for dark mode
+        "primary-dark": "#FFE071", // Primary color for dark mode
+        "primary-hover-dark": "#FBD144", // Primary hover color for dark mode
+        "text-dark": "#d7d9da", // Text color for dark mode
 
-            // Neutrals
-            'n900': '#222222', // this is the color for the Navbar and other elements
-            'n700': '#171F26', // Text color for light mode
-            'n500': '#555555', // Text color secundary texts, borders, etc
-        },
+        // Neutrals
+        n900: "#222222", // this is the color for the Navbar and other elements
+        n700: "#171F26", // Text color for light mode
+        n500: "#555555", // Text color secundary texts, borders, etc
+      },
     },
   },
-};
+}
 ```
 
 ---
@@ -439,9 +443,9 @@ Or follow the steps below:
 
 1. **Build the project:**
 
-    ```sh
-    npm run build
-    ```
+   ```sh
+   npm run build
+   ```
 
    This will generate the static files in the `dist` directory.
 
